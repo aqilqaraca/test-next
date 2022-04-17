@@ -16,7 +16,7 @@
 //     }
 //   }
 // }
-export const getServerSideProps = async ()=>{
+export const getStaticProps = async ()=>{
   let newArr = []
   const res = await fetch("https://test-a7414-default-rtdb.firebaseio.com/testimonial.json")
   const data = await res.json()
